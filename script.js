@@ -15,7 +15,7 @@ const questions = [
         correct: 1
     },
     {
-        question: "Luuqadahee kale ayaa Soomaaliga weheliya oo af-rasmi ah Soomaaliya?",
+        question: "Waa maxay luuqadda labaad ee Soomaaliya?",
         options: ["Ingiriis", "Talanti", "Carabi", "Amxaari"],
         correct: 2
     },
