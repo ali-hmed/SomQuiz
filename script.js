@@ -65,7 +65,7 @@ const questions = [
         correct: 1
     },
     {
-        question: "Magaalooyinkee soo socda ayaa ah deked weyn oo ku taal koonfurta Soomaaliya?",
+        question: "Sheeg magaalo ku taalla koonfurta Soomaaliya oo leh deked weyn?",
         options: ["Boosaaso", "Berbera", "Kismaayo", "Garoowe"],
         correct: 2
     },
