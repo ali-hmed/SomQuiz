@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomQuiz | Test Your Knowledge of Somalia</title>
+    <meta name="description"
+        content="Discover Somalia's history, culture, and geography with SomQuiz. A premium, interactive quiz experience featuring the beautiful colors of the Somali flag.">
+    <meta name="keywords" content="Somalia quiz, Somali history, Mogadishu, Horn of Africa, Somali culture">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- SoundCloud API -->
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+</head>
+
+<body>
+
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-controls">
+        <button id="music-toggle" class="music-btn" title="Toggle Music">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+        <!-- SoundCloud Player (Hidden) -->
+        <div id="sc-player-container" style="display:none;">
+            <iframe id="sc-widget"
+                src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kigaano-takar/doni-b-ya-isgaare-somali-song&auto_play=false&show_artwork=false"
+                width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <main class="app-container">
+        <!-- Welcome Screen -->
+        <section id="start-screen" class="screen active">
+            <div class="logo-area">
+                <div class="star-icon"><i class="fas fa-star"></i></div>
+                <h1>SomQuiz</h1>
+                <p class="tagline">Baro Dalkaaga iyo Dhaqankaaga</p>
+            </div>
+            <div class="info-card">
+                <p>Tijaabi aqoontaada ku saabsan taariikhda, dhaqanka, iyo juqraafiga Soomaaliya.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> 15 Su'aalood oo Xiiso leh</li>
+                    <li><i class="fas fa-check-circle"></i> Jawaab isla markiiba ah</li>
+                    <li><i class="fas fa-check-circle"></i> Wax baro adigoo ciyaaraya</li>
+                </ul>
+            </div>
+            <button id="start-btn" class="btn primary-btn">Bilow Kediska <i class="fas fa-arrow-right"></i></button>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <header class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="stats">
+                    <span id="question-count">Su'aasha 1/15</span>
+                    <span class="score-badge"><i class="fas fa-trophy"></i> <span id="current-score">0</span></span>
+                </div>
+            </header>
+
+            <div class="question-container">
+                <h2 id="question-text">Su'aashu halkan ayay ka soo muuqan doontaa</h2>
+            </div>
+
+            <div class="options-container" id="options-container">
+                <!-- Options injected by JS -->
+            </div>
+
+            <footer class="quiz-footer">
+                <button id="next-btn" class="btn secondary-btn hidden">Su'aasha Xigta</button>
+            </footer>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen hidden">
+            <div class="result-content">
+                <div class="icon-wrapper">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2>Kediskii waa Dhammaaday!</h2>
+                <p class="final-message" id="final-message">Shaqo wanaagsan!</p>
+
+                <div class="score-card">
+                    <span class="score-label">Dhibcahaaga</span>
+                    <div class="score-value"><span id="final-score">0</span> / <span id="total-score">15</span></div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="restart-btn" class="btn primary-btn"><i class="fas fa-redo"></i> Mar kale dheel</button>
+                    <!-- <button id="share-btn" class="btn outline-btn"><i class="fas fa-share-alt"></i> Share</button> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 SomQuiz. made with <span class="heart">♥</span> by <a href="https://github.com/ali-hmed">Ali aHmed</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
