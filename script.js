@@ -20,7 +20,7 @@ const questions = [
         correct: 2
     },
     {
-        question: "Soomaaliya waxay leedahay xeebta ugu dheer qaaradda Afrika. Qiyaastii waa intee dhererkeedu?",
+        question: "Soomaaliya waxay leedahay xeebta ugu dheer qaaradda Afrika. Qiyaasta dhererkeedu waa intee?",
         options: ["1,500 km", "2,300 km", "3,333 km", "4,500 km"],
         correct: 2
     },
@@ -30,7 +30,7 @@ const questions = [
         correct: 1
     },
     {
-        question: "Waa maxay naanaysta loo bixiyo Soomaaliya qaabkeeda dhuleed awgeed?",
+        question: "Maxaa loogu naanaysaa Soomaaliya qaab-dhismeedka dhulkeeda awgeed?",
         options: ["Luulada Afrika", "Geeska Afrika", "Jasiiradda Nabadda", "Xeebta Dahabka"],
         correct: 1
     },
@@ -70,7 +70,7 @@ const questions = [
         correct: 2
     },
     {
-        question: "Maxaa la yiraahdaa quraacda caanka ah ee Soomaalida ee sida canjeerada u eg?",
+        question: "Maxaa la yiraahdaa quraacda caanka ah ee Soomaalida?",
         options: ["Canjeero", "Chapati", "Injera", "Mofollet"],
         correct: 0
     }
