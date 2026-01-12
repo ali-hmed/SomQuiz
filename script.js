@@ -187,7 +187,7 @@ function showScreen(screenToShow) {
 
 function startTimer() {
     clearInterval(timer);
-    timeLeft = 20;
+    timeLeft = 30;
     updateTimerUI();
 
     timer = setInterval(() => {
@@ -203,7 +203,7 @@ function startTimer() {
 
 function updateTimerUI() {
     timerText.innerText = `⏱ ${timeLeft}s`;
-    const percentage = (timeLeft / 20) * 100;
+    const percentage = (timeLeft / 30) * 100;
     timerBar.style.width = `${percentage}%`;
 
     if (timeLeft <= 5) {
