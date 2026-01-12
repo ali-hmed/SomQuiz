@@ -1,12 +1,12 @@
 const questions = [
     {
-        question: "Maxay tahay caasimadda dalka Soomaaliya?",
+        question: "Sheeg caasimadda dalka Soomaaliya?",
         options: ["Hargeysa", "Muqdisho", "Kismaayo", "Boosaaso"],
         correct: 1
     },
     {
         question: "Maxay u taagan tahay xiddigta cad ee shanta gees leh ee calanka Soomaaliya?",
-        options: ["5-ta tiir ee Islaamka", "5-ta beelood ee waaweyn", "5-ta gobol ee Soomaalidu degto", "5-ta sano ee halgankii xornimada"],
+        options: ["5-ta tiir ee Islaamka", "5-ta beelood ee waaweyn", "5-ta dhul ee Soomaalidu degto", "5-ta sano ee halgankii xornimada"],
         correct: 2
     },
     {
@@ -60,7 +60,7 @@ const questions = [
         correct: 2
     },
     {
-        question: "Waa maxay buurta ugu dheer dalka Soomaaliya?",
+        question: "Sheeg buurta ugu dheer dalka Soomaaliya?",
         options: ["Buurta Kenya", "Buurta Shimbiris", "Buurta Kilimanjaro", "Buurta Elgon"],
         correct: 1
     },
@@ -79,7 +79,7 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
-let timeLeft = 20;
+let timeLeft = 30;
 
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
