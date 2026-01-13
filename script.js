@@ -79,7 +79,7 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
-let timeLeft = 30;
+let timeLeft = 20;
 
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
@@ -187,7 +187,7 @@ function showScreen(screenToShow) {
 
 function startTimer() {
     clearInterval(timer);
-    timeLeft = 30;
+    timeLeft = 20;
     updateTimerUI();
 
     timer = setInterval(() => {
@@ -203,7 +203,7 @@ function startTimer() {
 
 function updateTimerUI() {
     timerText.innerText = `⏱ ${timeLeft}s`;
-    const percentage = (timeLeft / 30) * 100;
+    const percentage = (timeLeft / 20) * 100;
     timerBar.style.width = `${percentage}%`;
 
     if (timeLeft <= 5) {
