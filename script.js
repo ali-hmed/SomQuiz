@@ -126,6 +126,8 @@ const startNormalBtn = document.getElementById('start-normal-btn');
 const startHardBtn = document.getElementById('start-hard-btn');
 const nextBtn = document.getElementById('next-btn');
 const restartBtn = document.getElementById('restart-btn');
+const quizHomeBtn = document.getElementById('quiz-home-btn');
+const resultHomeBtn = document.getElementById('result-home-btn');
 
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
@@ -148,7 +150,7 @@ function createTimerBar() {
     const bar = document.createElement('div');
     bar.id = 'timer-bar';
     bar.className = 'timer-bar';
-    document.querySelector('.progress-container').after(bar);
+    document.querySelector('.progress-wrapper').after(bar);
     return bar;
 }
 
@@ -184,7 +186,7 @@ startHardBtn.addEventListener('click', () => {
 
     // Set song to Cabsi Cabsi (Hard)
     // We update the src and the internal state
-    const cabsiUrl = "https://soundcloud.com/kigaano-takar/doni-b-ya-isgaare-somali-song"; 
+    const cabsiUrl = "https://soundcloud.com/kigaano-takar/doni-b-ya-isgaare-somali-song";
     scWidget.load(cabsiUrl, {
         auto_play: true,
         show_artwork: false,
@@ -218,6 +220,17 @@ nextBtn.addEventListener('click', () => {
     }
 });
 restartBtn.addEventListener('click', () => {
+    showScreen(startScreen);
+});
+
+quizHomeBtn.addEventListener('click', () => {
+    if (confirm('Ma hubtaa inaad rabto inaad ka baxdo ciyaarta hadda?')) {
+        clearInterval(timer);
+        showScreen(startScreen);
+    }
+});
+
+resultHomeBtn.addEventListener('click', () => {
     showScreen(startScreen);
 });
 

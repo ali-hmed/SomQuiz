@@ -147,6 +147,38 @@ body {
     }
 }
 
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-wrapper {
+    flex: 1;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f1f5f9;
+    background: #f8fafc;
+    color: var(--text-gray);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.icon-btn:hover {
+    color: var(--somali-blue);
+    background: #eff6ff;
+    border-color: var(--somali-blue);
+    transform: translateY(-2px);
+}
+
 /* App Container */
 .app-container {
     background: rgba(255, 255, 255, 0.95);
@@ -289,6 +321,20 @@ h1 {
     background-color: var(--accent-blue);
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(65, 137, 221, 0.5);
+}
+
+.outline-btn {
+    background-color: transparent;
+    border: 2px solid #f1f5f9;
+    color: var(--text-gray);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.outline-btn:hover {
+    background-color: #f8fafc;
+    border-color: var(--text-gray);
+    color: var(--text-dark);
 }
 
 @keyframes horrorPulse {
@@ -573,6 +619,13 @@ h1 {
 .score-value span:last-child {
     font-size: 1.5rem;
     opacity: 0.7;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
 }
 
 /* Footer */
